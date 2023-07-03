@@ -1,0 +1,43 @@
+.note{
+  background-color: #E9DD75;
+  padding: 15px;
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 40px;
+
+  *{
+    color: #1B1B1B;
+  }
+
+  .note-header{
+    display: flex;
+    justify-content: space-between;
+
+    span{
+      padding: 6px;
+      display: block;
+      transition: 0.3s;
+      border-radius: 5px;
+      background-color: transparent;
+
+      &:hover{
+        background-color: rgba(0, 0, 0, 0.2);
+      }
+
+      i{
+        font-size: 25px;
+      }
+    }
+  }
+
+  .note-body{
+    line-height: 1.5;
+    font-size: 16px;
+    margin: 25px 0;
+  }
+
+  .note-footer{
+    padding-top: 10px;
+    border-top: 1px solid #797979;
+  }
+}
