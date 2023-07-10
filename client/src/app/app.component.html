@@ -1,4 +1,5 @@
 <main>
+  <router-outlet></router-outlet>
   <div class="container notes-content">
     <div class="note-wrap">
       <app-note></app-note>
@@ -14,6 +15,9 @@
     </div>
     <div class="note-wrap">
       <app-note></app-note>
+    </div>
+    <div class="container btn-add-content">
+      <button routerLink="/add-note" class="btn-add-note">+</button>
     </div>
   </div>
 </main>

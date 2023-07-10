@@ -1,11 +1,6 @@
 main{
   padding: 0px 2%;
-
-  .container{
-    margin: 0 auto;
-    width: 100%;
-    max-width: 1280px;
-  }
+  position: relative;
 
   .notes-content{
     padding: 50px 0;
@@ -13,10 +8,37 @@ main{
     width: 100%;
     gap: 20px;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-start;
 
     .note-wrap{
-      width: 23%;
+      width: calc(25% - 15px);
+    }
+  }
+
+  .btn-add-content{
+    position: fixed;
+    bottom: 35px;
+    padding-right: 15px;
+    display: flex;
+    justify-content: flex-end;
+    right: 0;
+    left: 0;
+    padding-right: 15px;
+  }
+
+  .btn-add-note{
+    font-weight: 400;
+    font-size: 45px;
+    background-color: white;
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    line-height: 1px;
+    vertical-align: middle;
+    transition: 0.3s;
+
+    &:hover{
+      background-color: #EEE;
     }
   }
 }
@@ -26,7 +48,7 @@ main{
   main{
     .notes-content{
       .note-wrap{
-        width: 31%;
+        width: calc(33.33% - 15px);
       }
     }
   }
@@ -38,7 +60,7 @@ main{
   main{
     .notes-content{
       .note-wrap{
-        width: 47%;
+        width: calc(50% - 15px);
       }
     }
   }

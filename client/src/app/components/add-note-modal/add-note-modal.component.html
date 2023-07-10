@@ -1,0 +1,27 @@
+<div class="notepad-modal">
+  <div class="notepad-modal-content">
+    <div class="notepad-modal-header">
+      <button class="btn-close-modal" routerLink="/"><i class="fa-solid fa-xmark"></i></button>
+      <h2 class="notepad-modal-title">Add note</h2>
+    </div>
+    <div class="notepad-modal-body">
+      <form>
+        <div class="notepad-form-group">
+          <label>Title:</label>
+          <input type="text" />
+        </div>
+        <div class="notepad-form-group">
+          <label>Description:</label>
+          <textarea></textarea>
+        </div>
+        <div class="notepad-form-group">
+          <label>Note color:</label>
+          <div class="notepad-colors-content">
+            <input *ngFor="let color of noteColors" type="radio" name="notepad-color" id="{{color.name}}" value="{{color.name}}" [(ngModel)]="colorNotepad" />
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="notepad-modal-footer"></div>
+  </div>
+</div>
